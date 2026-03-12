@@ -16,11 +16,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20 # Must be 20+ for Vite
 
       - name: Install dependencies
         run: |
           cd Frontend
+          rm -rf node_modules package-lock.json
           npm install
 
       - name: Build frontend (TypeScript + Vite)
