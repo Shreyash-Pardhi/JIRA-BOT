@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer base {
+
+  *,
+  *::before,
+  *::after {
+
+    box-sizing: border-box;
+  }
+
+  html {
+
+    font-family: sans-serif;
+    /* color: #333; */
+  }
+}
