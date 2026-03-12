@@ -27,7 +27,7 @@ export const AuthLayout: React.FC<AuthLayoutProps> = ({
                         </div>
                     </div>
                     <h1 className="text-4xl font-bold text-gray-900 mb-3">
-                        {title}
+                        {title} Dev
                     </h1>
                     {subtitle && (
                         <p className="text-gray-600 text-base leading-relaxed">
