@@ -6,6 +6,9 @@ on:
       - main
     paths:
       - "Backend/**"
+    paths-ignore:
+      - "**.md"
+      - ".github/**"
 
 jobs:
   deploy:
