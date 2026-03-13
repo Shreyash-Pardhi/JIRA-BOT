@@ -6,9 +6,6 @@ on:
       - main
     paths:
       - "Frontend/**"
-    paths-ignore:
-      - "**.md"
-      - ".github/**"
 
 jobs:
   deploy:
