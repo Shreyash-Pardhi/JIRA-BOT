@@ -19,7 +19,7 @@ export const register = async (req: Request, res: Response) => {
 export const login = async (req: Request, res: Response) => {
 
     try {
-
+        console.log("Login in the user: ", req.body.email);
         const { email, password } = req.body;
 
         const result = await authService.loginUser(email, password);
@@ -37,7 +37,7 @@ export const login = async (req: Request, res: Response) => {
             maxAge: maxAge,
             path: "/"
         });
-
+        console.log("login completed: ", result.user.email);
         // Return user data (without token) in response
         res.json({ user: result.user });
 
