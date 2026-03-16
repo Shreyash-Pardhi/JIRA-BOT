@@ -32,8 +32,8 @@ export const login = async (req: Request, res: Response) => {
         // Set HTTP-only cookie with JWT token
         res.cookie("jwtToken", result.token, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production", // HTTPS only in production
-            sameSite: "lax", // IMPORTANT
+            secure: true, // HTTPS only in production
+            sameSite: "none", // IMPORTANT
             maxAge: maxAge,
             path: "/"
         });
